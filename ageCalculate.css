@@ -1,0 +1,311 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family:IranianSans ;
+    src: url('IranianSans.ttf');
+  }
+  .FontAwesome-debug{
+    font-family: 'FontAwesome';
+}
+ body{
+    font-family:IranianSans ;
+	 direction: ltr;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .container-box{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2e7d1;
+    padding-top: 1px;
+  }
+  .titleBox {
+    display: flex;
+    width: 168px;
+    margin: 33px auto;
+  }
+  .titleIcon{
+    font-size: 20px;
+    margin-left: 3px;  
+  }
+  .main-title{
+    font-size: 20px;
+    margin-left: 7px;
+    margin-top: 2px;  
+  }
+  .borderBox{
+    border: 8px solid #7ab8ee;
+    width: 713px;
+    height: 357px;
+    border-radius: 42px;
+    margin: -8px auto;
+  }
+  .dvContent{
+    display: flex;
+    width: 651px;
+    height: 300px;
+    background-color: #86a8c1;
+    border-radius: 10px;
+    margin: 21px 21px;
+  }
+  .main{
+    width: 250px;
+    height: 180px;
+  }
+  .calendarBox{
+    width: 461px;
+    height: 79px;
+    margin: 12px 11px;
+    border: 1px solid black;
+    border-radius: 7px;
+  }
+.label{
+  color: antiquewhite;
+  display: inline-block;
+  margin: 37px 15px;
+}
+.birthday{
+  color: black;
+  background-color: #ffe7c7;
+  border: 2px solid #0b0803de;
+  border-radius: 7px;
+
+}
+.calculateBox{
+  margin-left: 147px;
+  width: 135px;
+  border: 1px solid black;
+}
+.calculateLabel{
+  color: antiquewhite;
+}
+.btnCalculate{
+  background-color: #e8d5d8;
+  border-radius: 7px;
+  border: 1px solid #7ab8ee;
+  display: block;
+  margin-top: 12px;
+  margin-left: 6px;
+}
+  .borderBox{
+    border: 8px solid #2c6596;
+    width: 681px;
+    height: 340px;
+    border-radius: 42px;
+    margin: 15px auto;
+  }
+  .dvContent{
+    display: flex;
+    width: 651px;
+    height: 300px;
+    background-color: #306491;
+    border-radius: 10px;
+    margin: 12px 8px;
+  }
+  .main{
+    width: 250px;
+    height: 180px;
+  }
+  .calendarBox{
+    width: 461px;
+    height: 79px;
+    margin: 12px 11px;
+    border: 1px solid black;
+  }
+.label{
+  color: antiquewhite;
+  display: inline-block;
+  margin: 37px 15px;
+}
+.birthday{
+  color: black;
+  background-color: #ffe7c7;
+  border: 2px solid #0b0803de;
+  border-radius: 7px;
+}
+.calculateBox{
+  margin-left: 142px;
+  width: 147px;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 47px;
+  box-sizing: border-box;
+}
+.calculateLabel{
+  color: antiquewhite;
+}
+.btnCalculate{
+  background-color: #f5d6d3;
+  border-radius: 7px;
+  border: 1px solid #7ab8ee;
+  display: block;
+  margin-top: 17px;
+  margin-left: 21px;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+.ageBox{
+  width: 164px;
+  height: 282px;
+  margin-top: 9px;
+  margin-left: 230px;
+  border-left: 2px dashed #ffd7d7;
+}
+.titleOfAge {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 33px;
+}
+.show-age {
+  width: 150px;
+  height: 190px;
+  color: #ffe455;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  padding-top: 47px;
+  padding-left: 31px;
+  }
+  @media (min-width: 380px) and (max-width: 538px)   {
+    .titleBox{
+      margin: 21px auto;
+    }
+    .titleIcon{
+      margin-left: 18px;    
+    }
+    .main-title{
+    font-size: 16px;
+    margin-top: 4px;  
+    }
+    .borderBox{
+    width: 349px;
+    height: 395px;
+    margin: -19px auto;
+    }
+     .dvContent{
+      width: 317px;
+      height: 356px;
+      }
+      .calendarBox{
+        width: 295px;
+    }
+    .label{
+      margin: 9px 22px;
+      font-size: 14px;
+      }
+      .birthday{
+        font-size: 14px;
+        margin-left: 82px;
+      }
+      .calculateBox{
+        margin-left: 80px;
+        margin-top: 24px;          
+      }
+      .btnCalculate {
+        margin-top: 11px;
+        margin-left: 27px;
+        padding-bottom: 1px;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+      .calculateLabel {
+        font-size: 14px;
+      }
+      .ageBox {
+        height: 150px;
+        margin-top: 198px;
+        margin-left: -240px;
+        width: 300px;
+        border-left: none;
+        width: 300px;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+      .titleOfAge {
+        padding-top: 62px;
+        padding-right: 130px;
+        font-size: 18px;
+      }
+      .show-age {
+        width: 218px;
+        height: 124px;
+        font-size: 18px;
+        padding-left: 101px;
+        margin-left: 64px;
+        margin-top: -107px;
+      }
+    }
+  @media (min-width: 539px) and (max-width: 768px)   {
+    .titleIcon {
+      font-size: 19px;
+    }
+    .main-title {
+      font-size: 19px;
+    }
+    .borderBox{
+      width: 515px;
+      margin-top: -12px;
+     }
+     .dvContent{
+      width: 482px;
+      }
+      .calculateBox{
+        margin-left: 57px;
+      }
+      .ageBox{
+        height: 190px;
+        margin-top: 100px;
+        margin-left: 11px;
+      }
+      .titleOfAge {
+        padding-top: 3px;
+      }
+      .show-age {
+        padding-top: 31px;
+       }
+    } 
+     

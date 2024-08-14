@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="ageCalculate.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script>
+        function calculateAge() {
+
+            // getting selected date from calendar
+            var sen = document.getElementById("birthday").value;
+            console.log(sen)
+            var y = sen.slice(0, 4);
+            var year = Number(y)
+            var m = sen.slice(5, 7);
+            var month = Number(m);
+            var d = sen.slice(8, 10);
+            var day = Number(d);
+
+
+            //getting current date
+            const time = new Date();
+            const currentYear = new Date().getFullYear();
+            var currentMonth = new Date().getMonth();
+            currentMonth += 1;
+            const currentDay = new Date().getDate();
+
+            //calculate age based on date of selected from calendar
+            if (year >= currentYear && month >= currentMonth && day >= currentDay) {
+                alert("age is not defined... please enter age correctly")
+            }
+            else {
+                if (year >= currentYear) {
+                    var yearOTA = currentYear - year;
+                    yearOfTheAge = yearOTA * -1;
+                }
+                else {
+                    var yearOfTheAge = currentYear - year;
+
+                }
+
+                if (month >= currentMonth) {
+                    var monthOTA = currentMonth - month;
+                    monthOfTheAge = monthOTA * -1;
+                }
+                else {
+                    var monthOfTheAge = currentMonth - month;
+                }
+                if (day >= currentDay) {
+                    var dayOTA = currentDay - day;
+                    dayOfTheAge = dayOTA * -1;
+                }
+                else {
+                    var dayOfTheAge = currentDay - day;
+                }
+            }
+
+            document.getElementById("show-age").innerHTML = `years : ${yearOfTheAge}  months :  ${monthOfTheAge}  days : ${dayOfTheAge} `;
+            return;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-box">
+        <div class="titleBox" >
+            <i class="fa-light fa-calendar titleIcon FontAwesome-debug"></i>     
+
+            <h1 class="main-title">Age Calculator</h1>
+        </div>
+        <div class="borderBox">
+            <div id="dvContent" class="dvContent">
+                <div class="main">
+                    <div class="calendarBox">
+                        <label for="birthday" class="label">Select the date you want from calendar :</label>
+                        <input type="date" id="birthday" class="birthday" name="birthday" value="2024">
+                    </div>
+                    <div class="calculateBox">
+                        <label for="calculate" class="calculateLabel">Click to calculate :</label>
+                        <button id="calculate" class="btnCalculate" onclick="calculateAge()"> Calculate Age </button>
+                    </div>
+                </div>
+                <div class="ageBox" id="ageBox">
+                    <h1 class="titleOfAge" >your age is :</h1>
+                    <div class="show-age" id="show-age">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
